@@ -11,7 +11,8 @@ import {
     DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger 
 } from '@/components/ui/dropdown-menu'
 
-const UserDropdown = ({ user, initialStocks }: { user: User, initialStocks: StockWithWatchlistStatus[] }) => {
+const UserDropdown = ({ user }: { user: User }) => {
+// const UserDropdown = ({ user, initialStocks }: { user: User, initialStocks: StockWithWatchlistStatus[] }) => {
     const router = useRouter()
 
     const handleSignOut = async () => {
@@ -64,7 +65,8 @@ const UserDropdown = ({ user, initialStocks }: { user: User, initialStocks: Stoc
                 </DropdownMenuItem>
                 <DropdownMenuSeparator className='hidden sm:block bg-gray-600' />
                 <nav className='sm:hidden'>
-                    <NavItems initialStocks={initialStocks} />
+                    {/* <NavItems initialStocks={initialStocks} /> */}
+                    <NavItems />
                 </nav>
             </DropdownMenuContent>
         </DropdownMenu>

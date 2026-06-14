@@ -6,7 +6,8 @@ import { NAV_ITEMS } from '@/lib/contants'
 import { usePathname } from 'next/navigation'   
 import SearchCommand from './SearchCommand' 
 
-const NavItems = ({initialStocks}: { initialStocks: StockWithWatchlistStatus[]}) => {
+const NavItems = () => {
+// const NavItems = ({initialStocks}: { initialStocks: StockWithWatchlistStatus[]}) => {
     const pathname = usePathname()
     const isActive = (path: string) => {
         if(path === '/') return pathname === '/'

@@ -23,10 +23,10 @@ const Header = () => {
                     />
                 </Link>
                 <nav className="hidden sm:block">
-                    <NavItems initialStocks={[]} />
+                    <NavItems />
                 </nav>
 
-                <UserDropdown user={userr} initialStocks={[]} />
+                <UserDropdown user={userr} />
             </div>
         </header>
     )
