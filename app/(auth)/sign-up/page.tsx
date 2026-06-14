@@ -31,7 +31,7 @@ function SignUp() {
         mode: 'onBlur'
     })
 
-    const onSubmit = async (data: SignInFormData) => {
+    const onSubmit = async (data: SignUpFormData) => {
         try {
             
         } catch (error) {
